@@ -1,0 +1,184 @@
+/* Dashbord.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container-xxl {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  padding: 0;
+}
+
+#spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.spinner-border {
+  color: #007bff;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  background-color: #f8f9fa;
+}
+
+.sidebar .navbar {
+  background-color: #f8f9fa;
+}
+
+.sidebar .navbar-brand {
+  margin: 1rem 0;
+}
+
+.sidebar .navbar-nav .nav-item .nav-link {
+  color: #000;
+}
+
+.sidebar .navbar-nav .nav-item .dropdown-menu {
+  background-color: transparent;
+  border: none;
+}
+
+.sidebar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  background-color: transparent;
+}
+
+/* Content Styles */
+.content {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.navbar .sidebar-toggler {
+  margin-right: 1rem;
+}
+
+.navbar .form-control {
+  border: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+/* Table Styles */
+.table-container {
+  margin: 2rem 0;
+}
+
+.table-container .title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.login-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.login-table th,
+.login-table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.login-table .header {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.login-table .success {
+  background-color: #d4edda;
+}
+
+.login-table .failure {
+  background-color: #f8d7da;
+}
+
+.login-table .success-cell a,
+.login-table .failure-cell a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.login-table .success-cell:hover,
+.login-table .failure-cell:hover {
+  background-color: #e2e3e5;
+}
+
+.login-table .date {
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    display: none;
+  }
+
+  .navbar .sidebar-toggler {
+    margin-right: 0.5rem;
+  }
+}
